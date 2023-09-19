@@ -1,0 +1,280 @@
+particle = input('What is your particle? ')
+charge = ''
+spin = ''
+mass = ''
+generation = ''
+type_particle = ''
+is_antiparticle = False
+is_neutrino = False
+is_lepton = False
+is_boson = False
+is_z_or_w = False
+
+# Quarks+++++++++++++++++++++++++++++++++++++
+
+if particle == 'up':
+    charge = '2/3'
+    spin = '1/2'
+    mass = '2.2 MeV/c2'
+    generation = 'I'
+    type_particle = 'quark'
+
+elif particle == 'charm':
+    charge = '2/3'
+    spin = '1/2'
+    mass = '1.28 GeV/c2'
+    generation = 'II'
+    type_particle = 'quark'
+
+elif particle == 'top':
+    charge = '2/3'
+    spin = '1/2'
+    mass = '173.1 GeV/c2'
+    generation = 'III'
+    type_particle = 'quark'
+
+elif particle == 'down':
+    charge = '-1/3'
+    spin = '1/2'
+    mass = '4.7 MeV/c2'
+    generation = 'I'
+    type_particle = 'quark'
+
+elif particle == 'strange':
+    charge = '-1/3'
+    spin = '1/2'
+    mass = '96 MeV/c2'
+    generation = 'II'
+    type_particle = 'quark'
+
+elif particle == 'bottom':
+    charge = '-1/3'
+    spin = '1/2'
+    mass = '4.18 GeV/c2'
+    generation = 'III'
+    type_particle = 'quark'
+
+# Antiquarks+++++++++++++++++++++++++++++++++++++++++
+
+elif particle == 'antiup':
+    charge = '-2/3'
+    spin = '1/2'
+    mass = '2.2 MeV/c2'
+    generation = 'I'
+    type_particle = 'quark'
+    is_antiparticle = True
+
+elif particle == 'anticharm':
+    charge = '-2/3'
+    spin = '1/2'
+    mass = '1.28 GeV/c2'
+    generation = 'II'
+    type_particle = 'quark'
+    is_antiparticle = True
+
+elif particle == 'antitop':
+    charge = '-2/3'
+    spin = '1/2'
+    mass = '173.1 GeV/c2'
+    generation = 'III'
+    type_particle = 'quark'
+    is_antiparticle = True
+
+elif particle == 'antidown':
+    charge = '1/3'
+    spin = '1/2'
+    mass = '4.68 MeV/c2'
+    generation = 'I'
+    type_particle = 'quark'
+    is_antiparticle = True
+
+elif particle == 'antistrange':
+    charge = '1/3'
+    spin = '1/2'
+    mass = '96 MeV/c2'
+    generation = 'II'
+    type_particle = 'quark'
+    is_antiparticle = True
+
+elif particle == 'antibottom':
+    charge = '1/3'
+    spin = '1/2'
+    mass = '4.18 GeV/c2'
+    generation = 'III'
+    type_particle = 'quark'
+    is_antiparticle = True
+
+
+# Leptons+++++++++++++++++++++++++++++=
+
+elif particle == 'electron':
+    charge = '-1'
+    spin = '1/2'
+    mass = '0.511 MeV/c2'
+    generation = 'I'
+    is_lepton = True
+
+elif particle == 'muon':
+    charge = '-1'
+    spin = '1/2'
+    mass = '105.66 MeV/c2'
+    generation = 'II'
+    is_lepton = True
+
+elif particle == 'tau':
+    charge = '-1'
+    spin = '1/2'
+    mass = '1.7768 GeV/c2'
+    generation = 'III'
+    is_lepton = True
+
+elif particle == 'electron neutrino':
+    charge = '0'
+    spin = '1/2'
+    mass = '< 2.2 eV/c2'
+    generation = 'I'
+    is_neutrino = True
+
+elif particle == 'muon neutrino':
+    charge = '0'
+    spin = '1/2'
+    mass = '< 0.17 MeV/c2'
+    generation = 'II'
+    is_neutrino = True
+
+elif particle == 'tau neutrino':
+    charge = '0'
+    spin = '1/2'
+    mass = '< 18.2 MeV/c2'
+    generation = 'III'
+    is_neutrino = True
+
+# Antileptons+++++++++++++++++++++++++++++++++++++++++
+
+elif particle == 'positron':
+    charge = '1'
+    spin = '1/2'
+    mass = '0.511 MeV/c2'
+    generation = 'I'
+    is_antiparticle = True
+    is_lepton = True
+
+elif particle == 'antimuon':
+    charge = '1'
+    spin = '1/2'
+    mass = '105.66 MeV/c2'
+    generation = 'II'
+    is_antiparticle = True
+    is_lepton = True
+
+elif particle == 'antitau':
+    charge = '1'
+    spin = '1/2'
+    mass = '1.7768 GeV/c2'
+    generation = 'III'
+    is_antiparticle = True
+    is_lepton = True
+
+elif particle == 'electron antineutrino':
+    charge = '0'
+    spin = '1/2'
+    mass = '< 2.2 eV/c2'
+    generation = 'I'
+    is_antiparticle = True
+    is_neutrino = True
+
+elif particle == 'muon antineutrino':
+    charge = '0'
+    spin = '1/2'
+    mass = '< 0.17 MeV/c2'
+    generation = 'II'
+    is_antiparticle = True
+    is_neutrino = True
+
+elif particle == 'tau antineutrino':
+    charge = '0'
+    spin = '1/2'
+    mass = '< 18.2 MeV/c2'
+    generation = 'III'
+    is_antiparticle = True
+    is_neutrino = True
+
+# Bosons+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+elif particle == 'gluon':
+    charge = '0'
+    spin = '1'
+    mass = '0'
+    is_boson = True
+
+elif particle == 'photon':
+    charge = '0'
+    spin = '1'
+    mass = '0'
+    is_boson = True
+
+elif particle == 'Z':
+    charge = '0'
+    spin = '1'
+    mass = '91.19 GeV/c2'
+    type_particle = 'boson'
+    is_z_or_w = True
+
+elif particle == 'W+':
+    charge = '1'
+    spin = '1'
+    mass = '80.39 GeV/c2'
+    type_particle = 'boson'
+    is_z_or_w = True
+
+elif particle == 'W-':
+    charge = '-1'
+    spin = '1'
+    mass = '80.39 GeV/c2'
+    type_particle = 'boson'
+    is_z_or_w = True
+
+elif particle == 'higgs':
+    charge = '0'
+    spin = '0'
+    mass = '124.97 GeV/c2'
+    type_particle = 'boson'
+    is_z_or_w = True
+
+if is_antiparticle:
+    if is_neutrino or is_lepton:
+        print(f'The {particle} is an antiparticle that has:')
+        print(f'Mass -> {mass}')
+        print(f'Charge -> {charge}')
+        print(f'Spin -> {spin}')
+        print(f'Generation -> {generation}')
+    elif not is_neutrino:
+        print(f'The {particle} {type_particle} is an antiparticle that has:')
+        print(f'Mass -> {mass}')
+        print(f'Charge -> {charge}')
+        print(f'Spin -> {spin}')
+        print(f'Generation -> {generation}')
+
+else:
+    if is_neutrino or is_lepton:
+        print(f'The {particle} has:')
+        print(f'Mass -> {mass}')
+        print(f'Charge -> {charge}')
+        print(f'Spin -> {spin}')
+        print(f'Generation -> {generation}')
+
+    elif is_boson:
+        print(f'The {particle} has:')
+        print(f'Mass -> {mass}')
+        print(f'Charge -> {charge}')
+        print(f'Spin -> {spin}')
+
+    elif is_z_or_w:
+        print(f'The {particle} {type_particle} has:')
+        print(f'Mass -> {mass}')
+        print(f'Charge -> {charge}')
+        print(f'Spin -> {spin}')
+
+    else:
+        print("Sorry, but this isn't a particle!")
+        print("Please, try again later!")
